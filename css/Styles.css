@@ -7,7 +7,6 @@
 /*mq DESKTOP first*/
 @media only screen and (min-width: 768px){
 
-
     /*Estilos del body*/
 
 body{
@@ -17,9 +16,7 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-
 /*Seccion HOME*/
-
 video {
     position: fixed;
     right: 0;
@@ -66,7 +63,6 @@ video {
 }
 
 /*Estilos de menu aplicando Bootstrap*/
-
 .btMenu{
 font-weight: bolder;
 }
@@ -85,7 +81,6 @@ font-weight: bolder;
 }
 
 /*Seccion NOSOTROS*/
-
 #h1nosotros{
     font-size: medium;
     margin-left: 5.5%;
@@ -115,9 +110,7 @@ font-weight: bolder;
     margin: 15px;
 }
 
-
 /*Sección PROCESO*/
-
 #h1proceso{
     font-size: medium;
     margin-left: 5.5%;
@@ -145,9 +138,7 @@ font-weight: bolder;
     display: none;
 }
 
-
 /*Sección EL YERBAL*/
-
 #h1elyerbal{
     font-size: medium;
     margin-left: 5.5%;
@@ -167,7 +158,6 @@ font-weight: bolder;
 }
 
 /*Animaciones galería*/
-
 .contenedorImg:hover img{
     -webkit-transform:scale(1.3);transform:scale(1.3);
 }
@@ -177,7 +167,6 @@ font-weight: bolder;
 
 
 /*Seccion CURIOSIDADES*/
-
 #h1Curiosidades{
     font-size: medium;
     margin-left: 5.5%;
@@ -190,7 +179,6 @@ font-weight: bolder;
 
 
 /*Sección TRAYECTORIA*/
-
 .grillaTrayectoria{
     height: 100vh;
     display: grid;
@@ -226,7 +214,6 @@ section#textoGrid{
     text-align: justify;
 }
 
-
 section#imagenesGrid{
     grid-area: imagenesGrid;
     column-gap: 2rem;
@@ -250,9 +237,7 @@ h1{
     padding: 0;
 }
 
-
 /*estilos de footer*/
-
 .h2Footer{
     position: absolute;
     font-size: x-small;
@@ -273,27 +258,20 @@ h1{
 .containerH1logo{
     display: flex;
 }
-
-
 }
-
-
 
 /*----------------------MEDIA QUERIE TELÉFONO CELULAR-------------------------------------------------------------*/
 @media only screen and (min-width: 0px) and (max-width: 767px){
 
-    /*Estilos del body*/
-
+/*Estilos del body*/
 body{
-    background-color: #669C81;
+    background-color: wheat;
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Poppins', sans-serif;
 }
 
-
 /*Seccion HOME*/
-
 video {
     position: fixed;
     right: 0;
@@ -334,9 +312,7 @@ video {
     display: none;
 }
 
-
 /*Estilos de menu aplicando Bootstrap*/
-
 .btMenu{
 font-weight: bolder;
 }
@@ -351,7 +327,7 @@ font-weight: bolder;
     position: absolute;
     margin-left: 30%;
     transform: translatex(-50%);
-    background-color: wheat;
+    background-color: whitesmoke;
     opacity: 0.9;
     padding: 3rem;
     border-radius: 2rem;
@@ -359,7 +335,6 @@ font-weight: bolder;
 }
 
 /*Seccion NOSOTROS*/
-
 #h1nosotros{
     font-size: medium;
     font-weight: bold;
@@ -382,7 +357,6 @@ font-weight: bolder;
     margin: 1rem;
 }
 
-
 /*Sección PROCESO*/
 
 #h1proceso{
@@ -395,8 +369,6 @@ font-weight: bolder;
     flex-direction: column;
     margin-left: 2 rem;
     align-items: center;
-    ;
-
 }
 
 .textoProceso{
@@ -432,7 +404,6 @@ font-weight: bolder;
 }
 
 /*Animaciones galería*/
-
 .contenedorImg:hover img{
     -webkit-transform:scale(1.3);transform:scale(1.3);
 }
@@ -442,17 +413,12 @@ font-weight: bolder;
 
 
 /*Seccion CURIOSIDADES*/
-
 #h1Curiosidades{
     font-size: medium;
     font-weight: bold;
 }
 
-
-
-
 /*Sección TRAYECTORIA*/
-
 .grillaTrayectoria{
     height: 100vh;
     display: grid;
@@ -479,7 +445,6 @@ section#textoGrid{
     padding: 1rem;
 }
 
-
 section#imagenesGrid{
     grid-area: imagenesGrid;
     padding: 2rem;
@@ -493,7 +458,6 @@ h1{
 }
 
 /*estilos de footer*/
-
 .h2Footer{
     display: none;
 }
@@ -501,5 +465,4 @@ h1{
 #footerInicio{
     display: none;
 }
-
 }
