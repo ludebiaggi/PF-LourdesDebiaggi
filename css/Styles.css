@@ -11,7 +11,7 @@
     /*Estilos del body*/
 
 body{
-    background-color: #669C81;
+    background-color: wheat;
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Poppins', sans-serif;
@@ -43,18 +43,22 @@ video {
     margin: 1%;
     position: absolute;
     top: 35%;
+    filter: drop-shadow(0rem 0rem 2rem black);
 }
 
 .redesSociales{
     position: absolute;
     margin-left: 90%;
     bottom: 2%;
+    filter: drop-shadow(0rem 0rem 2rem black);
 }
 
 .backHome{
     margin-left: 90%;
     margin-top: 2rem;
     padding: 0;
+    filter: drop-shadow(0rem 0rem 2rem #252525);
+    z-index: 2;
 }
 
 #backHomeresponsive{
@@ -125,23 +129,20 @@ font-weight: bolder;
 }
 
 .textoProceso{
-    margin-top: 40px;
-    margin-bottom: 50px;
-    margin-left: 100px;
-    margin-right: 50px;
-    padding: 10px;
-    width: 50%;
-    height: 80%;
+    padding: 1rem;
     text-align: justify;
 }
 
 .parrafoProceso{
-    margin: 15px;
+    margin: 1rem;
 }
 
 .elementoProceso{
-    margin-top: 30px;
-    margin-left: 200px;
+    margin: 2rem;
+}
+
+#videoMobile{
+    display: none;
 }
 
 
@@ -183,6 +184,10 @@ font-weight: bolder;
     margin-top: 3rem;
 }
 
+.curiosidadesMobile{
+    display: none;
+}
+
 
 /*Sección TRAYECTORIA*/
 
@@ -217,13 +222,15 @@ main h1{
 
 section#textoGrid{
     grid-area: textoGrid;
-    padding: 50px;
+    padding: 3rem;
+    text-align: justify;
 }
 
 
 section#imagenesGrid{
     grid-area: imagenesGrid;
-    row-gap: 1rem;
+    column-gap: 2rem;
+    row-gap: 2rem;
 }
 
 footer{
@@ -310,6 +317,7 @@ video {
     margin: 1%;
     position: absolute;
     top: 35%;
+    filter: drop-shadow( 0rem 0rem 2rem #252525);
 }
 
 .redesSociales{
@@ -318,6 +326,7 @@ video {
     align-self: flex-end;
     margin-left: 90%;
     margin-top: 40%;
+    filter: drop-shadow( 0rem 0rem 2rem #252525)
 
 }
 
@@ -342,7 +351,7 @@ font-weight: bolder;
     position: absolute;
     margin-left: 30%;
     transform: translatex(-50%);
-    background-color: whitesmoke;
+    background-color: wheat;
     opacity: 0.9;
     padding: 3rem;
     border-radius: 2rem;
@@ -353,6 +362,7 @@ font-weight: bolder;
 
 #h1nosotros{
     font-size: medium;
+    font-weight: bold;
 }
 
 .elementoNosotros{
@@ -377,25 +387,28 @@ font-weight: bolder;
 
 #h1proceso{
     font-size: medium;
+    font-weight: bold;
 }
 
 .elementoProceso{
     display: flex;
     flex-direction: column;
+    margin-left: 2 rem;
+    align-items: center;
+    ;
+
 }
 
 .textoProceso{
     text-align: justify;
-
 }
 
 .parrafoProceso{
     margin: 2rem;
 }
 
-.elementoProceso{
-    margin-left: 2 rem;
-    align-items: center;
+#videoWeb{
+    display: none;
 }
 
 
@@ -403,6 +416,7 @@ font-weight: bolder;
 
 #h1elyerbal{
     font-size: medium;
+    font-weight: bold;
 }
 
 .gridGaleria{
@@ -431,6 +445,7 @@ font-weight: bolder;
 
 #h1Curiosidades{
     font-size: medium;
+    font-weight: bold;
 }
 
 
@@ -474,6 +489,7 @@ h1{
     font-size: medium;
     margin-left: 1rem;
     margin-top: 3rem;
+    font-weight: bold;
 }
 
 /*estilos de footer*/
