@@ -1,0 +1,489 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*mq DESKTOP first*/
+@media only screen and (min-width: 768px){
+
+
+    /*Estilos del body*/
+
+body{
+    background-color: #669C81;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*Seccion HOME*/
+
+video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 105%;
+    min-height: 100%;
+    transform: translateX(calc((100% - 100vw) / 2));
+    z-index: -2;
+    opacity: 0.8;
+  }
+
+.h1Home{
+    font-size: x-small;
+    margin: 1%;
+    position: absolute;
+    top: 60%;
+    color: whitesmoke;
+}
+
+.logoInicio{
+    margin: 1%;
+    position: absolute;
+    top: 35%;
+}
+
+.redesSociales{
+    position: absolute;
+    margin-left: 90%;
+    bottom: 2%;
+}
+
+.backHome{
+    margin-left: 90%;
+    margin-top: 2rem;
+    padding: 0;
+}
+
+#backHomeresponsive{
+    display: none;
+}
+
+/*Estilos de menu aplicando Bootstrap*/
+
+.btMenu{
+font-weight: bolder;
+}
+
+.btMenu div ul li a:hover{
+    font-size: 120%;
+    color: black;
+    font-weight: bold;
+}
+
+.navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    margin-top: 2rem;
+}
+
+/*Seccion NOSOTROS*/
+
+#h1nosotros{
+    font-size: medium;
+    margin-left: 5.5%;
+    margin-top: 3rem;
+}
+
+.elementoNosotros{
+    display: inline-flex;
+}
+
+.textoNosotros{
+    margin-top: 35px;
+    margin-bottom: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+    width: 40%;
+    height: 80%;
+    text-align: justify;
+}
+
+.mapaNosotros{
+    width: fit-content;
+    padding-right: 60px;
+}
+
+.parrafoNosotros{
+    margin: 15px;
+}
+
+
+/*Sección PROCESO*/
+
+#h1proceso{
+    font-size: medium;
+    margin-left: 5.5%;
+    margin-top: 3rem;
+}
+
+.elementoProceso{
+    display: inline-flex;
+}
+
+.textoProceso{
+    margin-top: 40px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    margin-right: 50px;
+    padding: 10px;
+    width: 50%;
+    height: 80%;
+    text-align: justify;
+}
+
+.parrafoProceso{
+    margin: 15px;
+}
+
+.elementoProceso{
+    margin-top: 30px;
+    margin-left: 200px;
+}
+
+
+/*Sección EL YERBAL*/
+
+#h1elyerbal{
+    font-size: medium;
+    margin-left: 5.5%;
+    margin-top: 3rem;
+}
+
+.gridGaleria{
+    display: grid;
+    /*creacion de tres columnas*/
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 0rem;
+    column-gap: 0rem;
+    width: 100%;
+    justify-items: center;
+    align-items: stretch;
+}
+
+/*Animaciones galería*/
+
+.contenedorImg:hover img{
+    -webkit-transform:scale(1.3);transform:scale(1.3);
+}
+.contenedorImg {
+    overflow: hidden;
+}
+
+
+/*Seccion CURIOSIDADES*/
+
+#h1Curiosidades{
+    font-size: medium;
+    margin-left: 5.5%;
+    margin-top: 3rem;
+}
+
+
+/*Sección TRAYECTORIA*/
+
+.grillaTrayectoria{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 4% 12% 80% 4%;
+    grid-template-areas:
+    "header header header header"
+    "gridLogo gridLogo h1 h1"
+    "textoGrid textoGrid imagenesGrid imagenesGrid"
+    "footer footer footer footer";
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header{
+    grid-area: header;
+}
+
+main#gridLogo{
+    grid-area: gridLogo;
+}
+
+main h1{
+    grid-area: h1;
+    margin-left: 15%;
+    font-weight: bold;
+}
+
+section#textoGrid{
+    grid-area: textoGrid;
+    padding: 50px;
+}
+
+
+section#imagenesGrid{
+    grid-area: imagenesGrid;
+    row-gap: 1rem;
+}
+
+footer{
+    grid-area: footer;
+    margin-bottom: 2%;
+}
+
+h1{
+    font-size: medium;
+    margin-left: 5.5%;
+    margin-top: 3rem;
+}
+
+#gridLogo{
+    margin-left: 13%;
+    margin-top: 6rem;
+    padding: 0;
+}
+
+
+/*estilos de footer*/
+
+.h2Footer{
+    position: absolute;
+    font-size: x-small;
+    align-items: center;
+    margin-left: 43%;
+}
+
+#footerInicio{
+    position: absolute;
+    font-size: x-small;
+    align-items: center;
+    margin-left: 43%;
+    bottom: 0;
+    color: whitesmoke;
+}
+
+/*Estilos de encabezado de main*/
+.containerH1logo{
+    display: flex;
+}
+
+
+}
+
+
+
+/*----------------------MEDIA QUERIE TELÉFONO CELULAR-------------------------------------------------------------*/
+@media only screen and (min-width: 0px) and (max-width: 767px){
+
+    /*Estilos del body*/
+
+body{
+    background-color: #669C81;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*Seccion HOME*/
+
+video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 105%;
+    min-height: 100%;
+    transform: translateX(calc((100% - 100vw) / 2));
+    z-index: -2;
+    opacity: 0.8;
+  }
+
+.h1Home{
+    font-size: x-small;
+    margin: 1%;
+    position: absolute;
+    top: 60%;
+    color: whitesmoke;
+}
+
+.logoInicio{
+    margin: 1%;
+    position: absolute;
+    top: 35%;
+}
+
+.redesSociales{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    margin-left: 90%;
+    margin-top: 40%;
+
+}
+
+.backHome{
+    display: none;
+}
+
+
+/*Estilos de menu aplicando Bootstrap*/
+
+.btMenu{
+font-weight: bolder;
+}
+
+.btMenu div ul li a:hover{
+    font-size: 120%;
+    color: black;
+    font-weight: bold;
+}
+
+.navbar-nav.navbar-center {
+    position: absolute;
+    margin-left: 30%;
+    transform: translatex(-50%);
+    background-color: whitesmoke;
+    opacity: 0.9;
+    padding: 3rem;
+    border-radius: 2rem;
+    z-index: 2;
+}
+
+/*Seccion NOSOTROS*/
+
+#h1nosotros{
+    font-size: medium;
+}
+
+.elementoNosotros{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.textoNosotros{
+    text-align: justify;
+}
+
+.mapaNosotros{
+    width: fit-content;
+}
+
+.parrafoNosotros{
+    margin: 1rem;
+}
+
+
+/*Sección PROCESO*/
+
+#h1proceso{
+    font-size: medium;
+}
+
+.elementoProceso{
+    display: flex;
+    flex-direction: column;
+}
+
+.textoProceso{
+    text-align: justify;
+
+}
+
+.parrafoProceso{
+    margin: 2rem;
+}
+
+.elementoProceso{
+    margin-left: 2 rem;
+    align-items: center;
+}
+
+
+/*Sección EL YERBAL*/
+
+#h1elyerbal{
+    font-size: medium;
+}
+
+.gridGaleria{
+    display: grid;
+    /*creacion de tres columnas*/
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 1rem;
+    column-gap: 0rem;
+    width: 100%;
+    justify-items: center;
+    align-items: stretch;
+}
+
+/*Animaciones galería*/
+
+.contenedorImg:hover img{
+    -webkit-transform:scale(1.3);transform:scale(1.3);
+}
+.contenedorImg {
+    overflow: hidden;
+}
+
+
+/*Seccion CURIOSIDADES*/
+
+#h1Curiosidades{
+    font-size: medium;
+}
+
+
+
+
+/*Sección TRAYECTORIA*/
+
+.grillaTrayectoria{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "header"
+    "h1"
+    "textoGrid"
+    "imagenesGrid";
+    align-items: center;
+}
+
+header{
+    grid-area: header;
+}
+
+main h1{
+    grid-area: h1;
+}
+
+section#textoGrid{
+    grid-area: textoGrid;
+    padding: 1rem;
+}
+
+
+section#imagenesGrid{
+    grid-area: imagenesGrid;
+    padding: 2rem;
+}
+
+h1{
+    font-size: medium;
+    margin-left: 1rem;
+    margin-top: 3rem;
+}
+
+/*estilos de footer*/
+
+.h2Footer{
+    display: none;
+}
+
+#footerInicio{
+    display: none;
+}
+
+}
