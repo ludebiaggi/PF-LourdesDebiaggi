@@ -10,7 +10,7 @@
     /*Estilos del body*/
 
 body{
-    background-color: wheat;
+    background-color: #77b885;
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Poppins', sans-serif;
@@ -62,6 +62,44 @@ video {
     display: none;
 }
 
+/*Diseño curva Desktop*/
+.custom-shape-divider-top-1669232726 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1669232726 svg {
+    position: relative;
+    display: block;
+    width: calc(131% + 1.3px);
+    height: 138px;
+}
+
+.custom-shape-divider-top-1669232726 .shape-fill {
+    fill: #ebf74f;
+}
+
+.custom-shape-divider-top-1669233505 {
+    display: none;
+}
+
+.custom-shape-divider-top-1669233505 svg {
+    display: none;
+}
+
+.custom-shape-divider-top-1669233505 .shape-fill {
+    display: none;
+}
+
+.custom-shape-divider-top-1669233505 svg {
+    display: none;
+}
+
 /*Estilos de menu aplicando Bootstrap*/
 .btMenu{
 font-weight: bolder;
@@ -85,6 +123,7 @@ font-weight: bolder;
     font-size: medium;
     margin-left: 5.5%;
     margin-top: 3rem;
+    z-index: 1;
 }
 
 .elementoNosotros{
@@ -104,6 +143,7 @@ font-weight: bolder;
 .mapaNosotros{
     width: fit-content;
     padding-right: 60px;
+    z-index: 1;
 }
 
 .parrafoNosotros{
@@ -115,10 +155,12 @@ font-weight: bolder;
     font-size: medium;
     margin-left: 5.5%;
     margin-top: 3rem;
+    z-index: 1;
 }
 
 .elementoProceso{
     display: inline-flex;
+    z-index: 1;
 }
 
 .textoProceso{
@@ -132,6 +174,11 @@ font-weight: bolder;
 
 .elementoProceso{
     margin: 2rem;
+    z-index: 1;
+}
+
+#videoWeb{
+    z-index: 1;
 }
 
 #videoMobile{
@@ -143,6 +190,7 @@ font-weight: bolder;
     font-size: medium;
     margin-left: 5.5%;
     margin-top: 3rem;
+    z-index: 1;
 }
 
 .gridGaleria{
@@ -155,6 +203,7 @@ font-weight: bolder;
     width: 100%;
     justify-items: center;
     align-items: stretch;
+    z-index: 1;
 }
 
 /*Animaciones galería*/
@@ -171,6 +220,7 @@ font-weight: bolder;
     font-size: medium;
     margin-left: 5.5%;
     margin-top: 3rem;
+    z-index: 1;
 }
 
 .curiosidadesMobile{
@@ -265,7 +315,7 @@ h1{
 
 /*Estilos del body*/
 body{
-    background-color: wheat;
+    background-color: #77b885;
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Poppins', sans-serif;
@@ -289,6 +339,7 @@ video {
     position: absolute;
     top: 60%;
     color: whitesmoke;
+    z-index: 1;
 }
 
 .logoInicio{
@@ -311,6 +362,46 @@ video {
 .backHome{
     display: none;
 }
+
+.custom-shape-divider-top-1669232726 {
+    display: none;
+}
+
+.custom-shape-divider-top-1669232726 svg {
+    display: none;
+}
+
+.custom-shape-divider-top-1669232726 .shape-fill {
+    display: none;
+}
+
+/*Diseño curva Mobile*/ 
+.custom-shape-divider-top-1669233505 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1669233505 svg {
+    position: relative;
+    display: block;
+    width: calc(131% + 1.3px);
+    height: 138px;
+}
+
+.custom-shape-divider-top-1669233505 .shape-fill {
+    fill: #ebf74f;
+}
+
+.custom-shape-divider-top-1669233505 svg {
+    width: calc(144% + 1.3px);
+    height: 138px;
+}
+
 
 /*Estilos de menu aplicando Bootstrap*/
 .btMenu{
@@ -335,9 +426,11 @@ font-weight: bolder;
 }
 
 /*Seccion NOSOTROS*/
+
 #h1nosotros{
     font-size: medium;
     font-weight: bold;
+    z-index: 1;
 }
 
 .elementoNosotros{
@@ -362,6 +455,7 @@ font-weight: bolder;
 #h1proceso{
     font-size: medium;
     font-weight: bold;
+    position: relative;
 }
 
 .elementoProceso{
@@ -389,6 +483,7 @@ font-weight: bolder;
 #h1elyerbal{
     font-size: medium;
     font-weight: bold;
+    position: relative;
 }
 
 .gridGaleria{
@@ -416,6 +511,7 @@ font-weight: bolder;
 #h1Curiosidades{
     font-size: medium;
     font-weight: bold;
+    position: relative;
 }
 
 /*Sección TRAYECTORIA*/
@@ -455,6 +551,7 @@ h1{
     margin-left: 1rem;
     margin-top: 3rem;
     font-weight: bold;
+    position: relative;
 }
 
 /*estilos de footer*/
