@@ -43,6 +43,8 @@ video {
     filter: drop-shadow(0rem 0rem 2rem black);
 }
 
+  
+
 .redesSociales{
     position: absolute;
     margin-left: 90%;
@@ -223,8 +225,24 @@ font-weight: bolder;
     z-index: 1;
 }
 
-.curiosidadesMobile{
+
+.tarjetasCuriosidades{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.tarjetasCuriosidadesMobile{
     display: none;
+}
+
+.card{
+    box-shadow: 2px 2px 10px #252525;
+}
+
+.card-title{
+    font-weight: bold;
 }
 
 
@@ -292,6 +310,7 @@ h1{
     position: absolute;
     font-size: x-small;
     align-items: center;
+    margin-top: 2%;
     margin-left: 43%;
 }
 
@@ -498,9 +517,26 @@ font-weight: bolder;
 /*Seccion CURIOSIDADES*/
 #h1Curiosidades{
     font-size: medium;
-    font-weight: bold;
-    position: relative;
+    margin-left: 5.5%;
+    margin-top: 3rem;
+    z-index: 1;
 }
+
+
+.tarjetasCuriosidades{
+    margin: 4rem;  
+}
+
+
+.card{
+    box-shadow: 2px 2px 10px #252525;
+    margin: 1rem;
+}
+
+.card-title{
+    font-weight: bold;
+}
+
 
 /*Sección TRAYECTORIA*/
 .grillaTrayectoria{
