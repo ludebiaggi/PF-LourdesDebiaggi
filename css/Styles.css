@@ -208,6 +208,11 @@ font-weight: bolder;
     z-index: 1;
 }
 
+.contenedorImg{
+    z-index: 1;
+    margin: 2px;
+}
+
 /*Animaciones galería*/
 .contenedorImg:hover img{
     -webkit-transform:scale(1.3);transform:scale(1.3);
