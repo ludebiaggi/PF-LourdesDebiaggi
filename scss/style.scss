@@ -1,0 +1,528 @@
+@import "media-queries";
+@import "variables";
+
+// Reset--------------------------------------------------------------------------
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//Estilos del Body-----------------------------------------------------------------
+body{
+    background-color: $colorfondo;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: $tipografia;
+}
+
+//Seccion HOME-----------------------------------------------------------------------
+
+video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 105%;
+    min-height: 100%;
+    transform: translateX(calc((100% - 100vw) / 2));
+    z-index: -2;
+    opacity: 0.8;
+  }
+
+.h1Home{
+    font-size: x-small;
+    margin: 1%;
+    position: absolute;
+    top: 60%;
+    color: whitesmoke;
+    @include Tablet{
+        top: 55%;
+    }
+}
+
+.logoInicio{
+    margin: 1%;
+    position: absolute;
+    top: 35%;
+    filter: drop-shadow(0rem 0rem 2rem black);
+    @include Tablet{
+        top: 40%;
+    }
+}
+  
+.redesSociales{
+    display: flex;
+    justify-content: space-between;
+    margin-left:90%;
+    bottom: 100%;
+    filter: drop-shadow(0rem 0rem 2rem #252525);  
+
+    @include Mobile{
+        flex-direction: column;
+        align-self: flex-end;
+        margin-left: 87%;
+        margin-top: 55%;
+        filter: drop-shadow(0rem 0rem 2rem #252525);  
+    }
+
+    @include Tablet{
+        margin-left: 70%;
+        margin-right: 5%;
+    }
+}
+
+.backHome{
+    margin-left: 90%;
+    margin-top: 2rem;
+    padding: 0;
+    filter: drop-shadow(0rem 0rem 2rem #252525);
+    z-index: 2;
+
+    @include Mobile{
+        display: none;
+    }
+
+    @include Tablet{
+        display: none;
+    }
+}
+
+#backHomeresponsive{
+    display: none;
+    @include Mobile{
+        display: flex;
+    }
+    @include Tablet {
+        display: flex;
+    }
+}
+
+//Estilos de Menú Bootstrap-------------------------------------------------------------------------
+
+.btMenu{
+    font-weight: bolder;
+    div{
+        ul{
+            li{
+                a:hover{
+                    font-size: 120%;
+                    color: $colorMenu;
+                    font-weight: bold;
+                }
+            }       
+         }
+        }
+    }
+
+.navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    margin-top: 2rem;
+
+    @include Mobile{
+        position: absolute;
+        left: 3%;
+        transform: translatex(-10%);
+        height: 100vh;
+        width: 30vh;
+        margin-top: 2rem;
+        background-color: $fondoMenu;
+        opacity: 0.9;
+        padding: 3rem 2rem;
+        border-radius: 2rem;
+        z-index: 2;
+    }
+
+    @include Tablet{
+        position: absolute;
+        left: 3%;
+        transform: translatex(-10%);
+        height: 100vh;
+        width: 30vh;
+        margin-top: 2rem;
+        background-color: $fondoMenu;
+        display: flex;
+        opacity: 0.9;
+        padding: 3rem 2rem;
+        border-radius: 2rem;
+        z-index: 2;
+    }
+}
+    
+//Sección NOSOTROS ----------------------------------------------------------------------------
+#h1nosotros{
+    font-size: medium;
+    margin-left: 5.5%;
+    margin-top: 3rem;
+    z-index: 1;
+}
+
+.elementoNosotros{
+    display: inline-flex;
+    @include Mobile{
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+    @include Tablet{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+
+    .textoNosotros{
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        margin-left: 4rem;
+        margin-right: 4rem;
+        width: 40%;
+        height: 80%;
+        text-align: justify;
+
+        @include Mobile{
+            text-align: justify;
+            padding: 0px;
+            margin: 1rem;
+            width: 90%;
+            height: 80%;
+        }
+
+        @include Tablet{
+            text-align: justify;
+            padding: 0px;
+            margin-left: 9%;
+            width: 80%;
+        }
+
+        .parrafoNosotros{
+            margin: 1rem;
+        }
+
+    }
+}
+
+
+.mapaNosotros{
+    width: fit-content;
+    padding-right: 4rem;
+    @include Mobile{
+        display: none;
+    }
+    @include Tablet{
+        display: flex;
+        margin-left: 10%;
+    }
+}
+
+.mapaNosotrosMobile{
+    display: none;
+
+    @include Mobile{
+        display: flex;
+        align-content: center;
+        align-items: center;
+        margin: 2rem;
+    }
+    @include Tablet{
+        display: none;
+    }
+}
+
+
+//Sección PROCESO --------------------------------------------------------------------
+#h1proceso{
+    font-size: medium;
+    margin-left: 5.5%;
+    margin-top: 3rem;
+    z-index: 1;
+}
+
+.elementoProceso{
+    display: inline-flex;
+    z-index: 1;
+    @include Mobile{
+        display: flex;
+        flex-direction: column;
+        margin-left: 2 rem;
+        align-items: center;    
+    }
+    @include Tablet{
+        display: flex;
+        flex-direction: column;
+        margin-left: 2 rem;
+        align-items: center;    
+    }
+
+    .textoProceso{
+        padding: 1rem;
+        text-align: justify;
+
+        .parrafoProceso{
+            margin: 1rem;
+        }
+    }
+}
+
+
+#videoWeb{
+    z-index: 1;
+    @include Mobile{
+        display: none;
+    }
+}
+
+#videoMobile{
+    display: none;
+    @include Mobile{
+        display: flex;
+    }
+}
+
+//Sección YERBAL----------------------------------------------------------------------------------
+#h1elyerbal{
+    font-size: medium;
+    margin-left: 5.5%;
+    margin-top: 3rem;
+    z-index: 1;
+}
+
+.gridGaleria{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 0rem;
+    column-gap: 0rem;
+    width: 100%;
+    justify-items: center;
+    align-items: stretch;
+    z-index: 1;
+    @include Mobile{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        row-gap: 1rem;
+        column-gap: 0rem;
+        width: 100%;
+        justify-items: center;
+        align-items: stretch;
+    }
+    @include Tablet{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        row-gap: 1rem;
+        column-gap: 3rem;
+        width: 100%;
+        justify-items: center;
+        align-items: stretch;
+    }
+}
+
+.contenedorImg{
+    z-index: 1;
+    margin: 2px;
+    overflow: hidden;
+}
+
+.contenedorImg:hover img{
+    -webkit-transform:scale(1.3);transform:scale(1.3);
+}
+
+//Sección CURIOSIDADES---------------------------------------------------------
+#h1Curiosidades{
+    font-size: medium;
+    margin-left: 5.5%;
+    margin-top: 3rem;
+    z-index: 1;
+}
+
+.tarjetasCuriosidades{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+    @include Mobile{
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+    }
+    @include Tablet{
+        display: flexbox;
+        flex-direction: column;
+        align-content: space-around;
+    }
+    .card{
+        box-shadow: 2px 2px 10px #252525;
+        @include Mobile{
+            margin: 1rem;
+        }
+        @include Tablet{
+            margin: 1rem;
+        }
+        .card-title{
+            font-weight: bold;
+        }
+    }
+}
+
+.card:hover {
+    box-shadow: $sombrasOscuras;
+}
+
+
+//Sección TRAYECTORIA -------------------------------------------------------
+.grillaTrayectoria{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 4% 12% 80% 4%;
+    grid-template-areas:
+    "header header header header"
+    "gridLogo gridLogo h1 h1"
+    "textoGrid textoGrid imagenesGrid imagenesGrid"
+    "footer footer footer footer";
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @include Mobile{
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "header"
+        "h1"
+        "textoGrid"
+        "imagenesGrid";
+        align-items: center;
+    }
+    @include Tablet{
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "header header"
+        "h1 h1"
+        "textoGrid textoGrid"
+        "imagenesGrid imagenesGrid";
+        align-items: center;
+    }
+    #gridLogo{
+        margin-left: 13%;
+        margin-top: 6rem;
+        padding: 0;
+    }
+
+}
+
+header{
+    grid-area: header;
+}
+
+main#gridLogo{
+    grid-area: gridLogo;
+}
+
+main h1{
+    grid-area: h1;
+    margin-left: 15%;
+    font-weight: bold;
+    @include Mobile{
+        grid-area: h1;
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+section#textoGrid{
+    grid-area: textoGrid;
+    padding: 3rem;
+    text-align: justify;
+    @include Mobile{
+        grid-area: textoGrid;
+        width: 140%;
+    }
+    @include Tablet{
+        grid-area: textoGrid;
+        width: 140%;
+    }
+}
+
+section#imagenesGrid{
+    grid-area: imagenesGrid;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    @include Mobile{
+        grid-area: imagenesGrid;
+        padding: 2rem;    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 40%;
+    }
+    @include Tablet{
+        grid-area: imagenesGrid;
+        padding: 2rem;    
+        display: flex;
+        flex-direction: column; 
+        margin-left: 40%;
+    }
+}
+
+footer{
+    grid-area: footer;
+    margin-bottom: 2%;
+}
+
+h1{
+    font-size: medium;
+    margin-left: 5.5%;
+    margin-top: 3rem;
+    @include Mobile{
+        font-size: medium;
+        margin-left: 1rem;
+        margin-top: 3rem;
+        font-weight: bold;
+        position: relative;
+    }
+}
+
+//Estilos de FOOTER ---------------------------------------------------------
+.h2Footer{
+    position: absolute;
+    font-size: x-small;
+    align-items: center;
+    margin-top: 2%;
+    margin-left: 43%;
+    @include Mobile{
+        display: none;
+    }
+    @include Tablet{
+        display: none;
+    }
+}
+
+#footerInicio{
+    @extend .h2Footer;
+    bottom: 0;
+    color: whitesmoke;
+    @include Mobile{
+        display: none;
+    }
+    @include Tablet{
+        margin-left: 40%;
+    }
+}
+
+//Estilos encabezado de MAIN
+.containerH1logo{
+    display: flex;
+    z-index: 1;
+}
+
+
+    
