@@ -9,11 +9,17 @@
 }
 
 //Estilos del Body-----------------------------------------------------------------
-body{
+
+.bodyIndex{
     background-color: $colorfondo;
     background-repeat: no-repeat;
     background-size: cover;
     font-family: $tipografia;
+}
+
+body{
+    @extend .bodyIndex;
+    background-image: url(../Img/Back.png);
 }
 
 //Seccion HOME-----------------------------------------------------------------------
@@ -53,8 +59,9 @@ video {
 .redesSociales{
     display: flex;
     justify-content: space-between;
-    margin-left:90%;
-    bottom: 100%;
+    margin-top: 40%;
+    margin-left: 85%;
+    margin-right: 5%;
     filter: drop-shadow(0rem 0rem 2rem #252525);  
 
     @include Mobile{
@@ -66,6 +73,7 @@ video {
     }
 
     @include Tablet{
+        margin-top: 0%;
         margin-left: 70%;
         margin-right: 5%;
     }
@@ -132,6 +140,7 @@ video {
         padding: 3rem 2rem;
         border-radius: 2rem;
         z-index: 2;
+        font-size: large;
     }
 
     @include Tablet{
@@ -147,6 +156,7 @@ video {
         padding: 3rem 2rem;
         border-radius: 2rem;
         z-index: 2;
+        font-size: x-large;
     }
 }
     
@@ -204,8 +214,7 @@ video {
 
 
 .mapaNosotros{
-    width: fit-content;
-    padding-right: 4rem;
+    box-shadow: $sombrasOscuras;
     @include Mobile{
         display: none;
     }
@@ -223,6 +232,7 @@ video {
         align-content: center;
         align-items: center;
         margin: 2rem;
+        box-shadow: $sombrasOscuras;
     }
     @include Tablet{
         display: none;
@@ -241,6 +251,7 @@ video {
 .elementoProceso{
     display: inline-flex;
     z-index: 1;
+    margin: 1rem;
     @include Mobile{
         display: flex;
         flex-direction: column;
@@ -353,7 +364,7 @@ video {
         align-content: space-around;
     }
     .card{
-        box-shadow: 2px 2px 10px #252525;
+        box-shadow: $sombrasOscuras;
         @include Mobile{
             margin: 1rem;
         }
@@ -470,6 +481,9 @@ section#imagenesGrid{
         display: flex;
         flex-direction: column; 
         margin-left: 40%;
+    }
+    img{
+        box-shadow: $sombrasOscuras;
     }
 }
 
