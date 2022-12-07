@@ -116,6 +116,12 @@ video {
                     font-size: 120%;
                     color: $colorMenu;
                     font-weight: bold;
+                    @include Mobile{
+                        color: #252525;
+                    }
+                    @include Tablet{
+                        color:#252525;
+                    }
                 }
             }       
          }

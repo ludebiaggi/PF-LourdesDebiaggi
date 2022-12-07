@@ -89,6 +89,12 @@ video {
     font-size: 120%;
     color: #fce185;
     font-weight: bold; }
+    @media screen and (min-width: 0px) and (max-width: 480px) {
+      .btMenu div ul li a:hover {
+        color: #252525; } }
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+      .btMenu div ul li a:hover {
+        color: #252525; } }
 
 .navbar-nav.navbar-center {
   position: absolute;
